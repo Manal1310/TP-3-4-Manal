@@ -12,7 +12,7 @@ from model.weapon import Weapon
 from model.player import Player
 from model.battlefield import Battlefield
 from sqlalchemy.orm import declarative_base, relationship
-engine = create_engine('sqlite:///tdl.db', echo=True, future=True)
+engine = create_engine('sqlite:///tptdlog.db', echo=True, future=True)
 Base = declarative_base(bind=engine)
 Session = sessionmaker(bind=engine)
 
