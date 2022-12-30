@@ -1,0 +1,82 @@
+<div id="menu">
+  
+  <li>
+    <a href="home.html" class="actif">Accueil </a>
+  </li>
+  <li>
+    <a href="create_game.html">Creer une partie</a>
+  </li>
+  <li>
+    <a href="join_game.html">Rejoindre une partie</a>
+  </li>
+  <li>
+    <a href="manage_fleet.html">Creez votre flotte</a>
+  </li>
+  <li>
+    <a href="play_game.html">Jouer</a>
+  </li>
+
+</div>
+    <style>
+
+        table{border-collapse: collapse;}
+        th,td{border: 1px solid #000 ; padding: 5px;}
+        .table-row{cursor:pointer;}
+        a:hover {
+            background-color: rgb(139, 139, 135);
+          }
+      </style> 
+      
+      </head> 
+      <body>
+        <center> 
+        <table>
+  
+        <thead>
+        <tr>
+          <th id="vaisseau">Vessel</th> 
+          <th id ="Coordonnées">Coordonnees </th>
+          <th id="resistance">Resistance </th>
+          <th id="Arme">Arme</th> 
+          <th id ="Munitions">Munitions </th> 
+          <th id="Rayond'action">Rayon d'action </th> 
+        </tr> 
+      </thead> 
+      <tbody> 
+        <tr class="table-row">
+            <a>
+        <td headers= "vaisseau"><a>Cruiser</a></td>
+        <td headers="Coordonnées">7,12,0</td>
+        <td headers="resistance">6</td>
+        <td headers= "Arme">Air Missile Launcher</td>
+        <td headers="Munitions">50</td>
+        <td headers="Rayond'action">40</td>
+        </tr></a>
+         <tr class="table-row">
+  
+        <td headers="vaisseau"><a>Destroyer</a></td> 
+        <td headers="Coordonnées">4,29,0</td>
+        <td headers="resistance">4</td> 
+        <td headers="Arme">TopedoLauncher</td> 
+        <td headers="Munitions">15</td>
+        <td headers="Rayond'action">20</td> 
+      
+      </tr></a>
+        </tbody>
+        </table>
+         </body>
+         <br><input class="submit-button" type="submit" value="Feu">
+  </center>
+  <style>
+
+    body {
+      background-image: url('images/Battle.jpg');
+    }
+  </style> 
+  <h5>Coordonnees de la cible</h5>
+  <label for="min-x">X:</label><br>
+  <input type="number" id="min-x" name="min_x" required value="0"><br>
+  <label for="max-x">Y:</label><br>
+  <input type="number" id="max-x" name="max_x" required value="0"><br>
+  <label for="max-z">Z:</label><br>
+  <input type="number" id="max-z" name="max_z" required value="0"><br><br>

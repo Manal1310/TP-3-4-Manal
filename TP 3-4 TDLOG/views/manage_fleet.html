@@ -1,0 +1,90 @@
+<script src="../scripts/create-game.js"></script>
+<div class="vertical-container">
+ <div class="form-result" id="create-game-result"></div>
+ <div class="centered-form">
+  
+  <div id="menu">
+    <ul class="menu">
+        <li>
+          <a href="home.html" class="actif">Accueil</a>
+        </li>
+        <li>
+          <a href="create_game.html">Creer une partie</a>
+        </li>
+        <li>
+          <a href="join_game.html">Rejoindre une partie</a>
+        </li>
+        <li>
+          <a href="manage_fleet.html">Creez votre flotte</a>
+        </li>
+        <li>
+          <a href="play_game.html">Jouer</a>
+        </li>
+  </ul>
+<center>
+  </div>
+  <center>
+      <head>
+    <link rel="stylesheet" href="../Styles/styles3.css">
+      </head>
+      <form id="create-game-form">
+          <label for="player-name"><b>Ton pseudo:</b></label><br>
+          <input type="text" id="player-name" name="player_name" required><br><br>
+          <label for="game-id"><b>Identifiant de la partie:</b> </label><br>
+          <input type="int" id="game-id" name="game_id" required><br><br>
+          <input class="submit-button" type="submit" value="Charger ma flotte">
+        <br><br> <label for="pet-select"><b>Choisir le type de vaisseau:</b></label>
+          <br> <select name="pets" id="pet-select">
+              <option value="">--Choisir le type--</option>
+              <option value="Frigate">Frigate</option>
+              <option value="Destroyer">Destroyer</option>
+              <option value="Cruiser">Cruiser</option>
+              <option value="Submarine">Submarine</option>
+          </select> 
+
+          <h5>Les dimensions de l'espace de jeu</h5>
+          <label for="min-x">X:</label><br>
+          <input type="number" id="min-x" name="min_x" required value="0"><br>
+          <label for="max-x">Y:</label><br>
+          <input type="number" id="max-x" name="max_x" required value="0"><br>
+          <label for="min-y">Z:</label><br>
+          <input type="number" id="min-y" name="min_y" required value="0"><br>
+          <input type="number" id="max-z" name="max_z" required value="0"><br><br>
+          <input class="submit-button" type="submit" value="Valider">
+      </form>
+        
+      <style>
+        table{border-collapse: collapse;}
+        th,td{border: 1px solid #000 ; padding: 5px;}
+      </style> 
+      </center>
+      </head> 
+      <body>
+        <center> 
+        <table>
+
+        <thead>
+        <tr>
+          <th id="vaisseau">Vessel</th> 
+          <th id ="Coordonnées">Coordonnees </th>
+          <th id="resistance">Resistance </th>
+          <th id="Arme">Arme</th> 
+          <th id ="Munitions">Munitions </th> 
+          <th id="Rayond'action">Rayon d'action </th> 
+        </tr> 
+      </thead> 
+
+        </tbody>
+        </table>
+        </body>
+        <br><input class="submit-button" type="submit" value="Jouer">
+  </center>
+</center>
+<style>
+
+  body {
+    background-image: url('images/Battle.jpg');
+  }
+</style> 
+ </div>
+</div>
